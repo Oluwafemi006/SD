@@ -1,0 +1,4 @@
+import Link from "next/link";
+import ImageLightbox from "./ImageLightbox";
+
+export default function PageHero({ eyebrow, title, description, image }: { eyebrow: string; title: string; description: string; image: string }) { return <section className="bg-off py-14 md:py-20"><div className="site-container grid items-center gap-12 lg:grid-cols-2"><div><span className="eyebrow">{eyebrow}</span><h1 className="heading max-w-2xl font-extrabold text-navy">{title}</h1><p className="lead mt-6 max-w-xl">{description}</p><div className="mt-8 flex flex-wrap gap-3"><Link href="/contact" className="btn btn-primary">Contacter l’entreprise</Link><Link href="/#services" className="btn btn-outline">Voir nos expertises</Link></div></div><ImageLightbox src={image} alt={title} priority className="h-[360px] rounded-lg shadow-soft md:h-[480px]" sizes="(min-width:1024px) 50vw, 100vw" /></div></section>; }

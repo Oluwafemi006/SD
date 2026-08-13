@@ -1,0 +1,7 @@
+import type { Metadata } from "next";
+import PageHero from "@/components/PageHero";
+import ImageLightbox from "@/components/ImageLightbox";
+import { projects } from "@/data/site";
+
+export const metadata: Metadata = { title: "Réalisations", description: "Découvrez les réalisations de SD International Group dans le BTP, l'énergie et l'approvisionnement.", alternates: { canonical: "/realisations" } };
+export default function ProjectsPage() { return <main><PageHero eyebrow="Réalisations" title="Des interventions concrètes, conduites avec exigence." description="Nos références illustrent nos savoir-faire dans les infrastructures, l’énergie et l’approvisionnement." image={projects[0].image}/><section className="section"><div className="site-container"><div className="mb-10 max-w-2xl"><span className="eyebrow">Portfolio</span><h2 className="heading font-extrabold text-navy">Projets sélectionnés</h2><p className="lead mt-5">Les intitulés, lieux et photographies réelles seront publiés après validation par l’entreprise.</p></div><div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">{projects.map(p=><article key={p.title} className="overflow-hidden rounded-lg border"><ImageLightbox src={p.image} alt={p.title} className="h-72" sizes="33vw"/><div className="p-6"><span className="text-xs font-extrabold uppercase text-brand">{p.category}</span><h2 className="mt-3 text-xl font-extrabold text-navy">{p.title}</h2><p className="mt-2 text-muted">{p.location}</p></div></article>)}</div></div></section></main>; }
