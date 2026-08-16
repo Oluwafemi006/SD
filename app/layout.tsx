@@ -10,11 +10,11 @@ const manrope = Manrope({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: { default: "SD International Group | BTP, Énergie & Import-Export", template: "%s | SD International Group" },
-  description: "SD International Group accompagne entreprises, institutions et collectivités dans leurs projets de BTP, énergie, réseaux HT/MT/BT, études et logistique au Bénin.",
+  title: { default: "SD International Group | Des solutions pour vos projets", template: "%s | SD International Group" },
+  description: "SD International Group accompagne entreprises, institutions et collectivités grâce à une offre multisectorielle de conseil, réalisation, fourniture et coordination opérationnelle au Bénin.",
   alternates: { canonical: "/" },
   openGraph: { type: "website", locale: "fr_FR", siteName: site.name, title: site.name, description: site.description },
-  icons: { icon: "/images/logo-sd-international.png", apple: "/images/logo-sd-international.png" },
+  icons: { icon: "/images/logo-sd-international-new.png", apple: "/images/logo-sd-international-new.png" },
   robots: { index: true, follow: true },
 };
 

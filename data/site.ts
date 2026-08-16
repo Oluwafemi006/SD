@@ -1,6 +1,6 @@
 export const site = {
   name: "SD International Group",
-  description: "Partenaire technique pour les projets de BTP, d'énergie, d'études et d'approvisionnement au Bénin.",
+  description: "Groupe multisectoriel au service des projets, des opérations et des besoins d'approvisionnement au Bénin.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.sdinternational-group.com",
   phone: "+229 00 00 00 00",
   phoneHref: "+22900000000",
