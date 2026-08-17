@@ -2,11 +2,11 @@ export const site = {
   name: "SD International Group",
   description: "Groupe multisectoriel au service des projets, des opérations et des besoins d'approvisionnement au Bénin.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.sdinternational-group.com",
-  phone: "+229 00 00 00 00",
-  phoneHref: "+22900000000",
-  email: "contact@sdinternational-group.com",
+  phone: "+229 01 96 97 18 32",
+  phoneHref: "+2290196971832",
+  email: "sdinter2009@yahoo.fr",
   location: "Bénin",
-  whatsapp: "https://wa.me/22900000000",
+  whatsapp: "https://wa.me/2290196971832",
 };
 
 export const services = [
