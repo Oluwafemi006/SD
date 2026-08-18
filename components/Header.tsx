@@ -3,8 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { projects } from "@/data/site";
 
-const links = [{ href: "/#a-propos", label: "À propos" }, { href: "/#services", label: "Services" }, { href: "/realisations", label: "Réalisations" }, { href: "/hse-qualite", label: "HSE & Qualité" }, { href: "/contact", label: "Contact" }];
+const links = [{ href: "/#a-propos", label: "À propos" }, { href: "/#services", label: "Services" }, ...(projects.length ? [{ href: "/realisations", label: "Réalisations" }] : []), { href: "/hse-qualite", label: "HSE & Qualité" }, { href: "/contact", label: "Contact" }];
 
 export default function Header() {
   const [open, setOpen] = useState(false);
