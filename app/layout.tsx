@@ -13,7 +13,8 @@ export const metadata: Metadata = {
   title: { default: "SD International Group | Des solutions pour vos projets", template: "%s | SD International Group" },
   description: "SD International Group accompagne entreprises, institutions et collectivités grâce à une offre multisectorielle de conseil, réalisation, fourniture et coordination opérationnelle au Bénin.",
   alternates: { canonical: "/" },
-  openGraph: { type: "website", locale: "fr_FR", siteName: site.name, title: site.name, description: site.description },
+  openGraph: { type: "website", locale: "fr_FR", siteName: site.name, title: site.name, description: site.description, images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "SD International Group" }] },
+  twitter: { card: "summary_large_image", title: site.name, description: site.description, images: ["/opengraph-image"] },
   icons: { icon: "/images/logo-sd-international-new.png", apple: "/images/logo-sd-international-new.png" },
   robots: { index: true, follow: true },
 };
