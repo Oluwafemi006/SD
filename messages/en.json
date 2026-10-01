@@ -1,9 +1,23 @@
 {
   "Header": {
     "about": "About",
-    "services": "Our Services",
+    "services": "Services",
     "projects": "Projects",
+    "hse": "HSE & Quality",
     "contact": "Contact Us"
+  },
+  "Footer": {
+    "about": "About Us",
+    "about_text": "Multisectoral company based in Benin, specializing in construction, civil engineering, solar energy, electrical networks, logistics, and import-export.",
+    "contact": "Contact",
+    "links": "Useful Links",
+    "home": "Home",
+    "services": "Our Services",
+    "projects": "Our Projects",
+    "hse": "HSE & Quality",
+    "mentions": "Legal Notice",
+    "privacy": "Privacy Policy",
+    "rights": "All rights reserved."
   },
   "Hero": {
     "eyebrow": "Benin · Multisectoral Solutions",
@@ -12,5 +26,189 @@
     "description": "Consulting, execution, supply, and coordination: we mobilize the right skills for every mission.",
     "cta_primary": "Submit your request",
     "cta_secondary": "Explore our activities"
+  },
+  "Home": {
+    "About": {
+      "eyebrow": "About SD International",
+      "title": "Versatile expertise for your complex projects.",
+      "p1": "Operating primarily in Benin and the sub-region, SD International Group brings together specialized skills to meet the technical challenges of businesses and institutions.",
+      "p2": "Our strength lies in our ability to coordinate different trades, from design to execution, including the supply of specific materials.",
+      "cta": "Discover our commitments"
+    },
+    "Expertise": {
+      "eyebrow": "Areas of Intervention",
+      "title": "Complementary skills.",
+      "description": "Explore our activities and compose a response adapted to the reality of your needs.",
+      "cta": "Explore this expertise"
+    },
+    "Method": {
+      "eyebrow": "Our Method",
+      "title": "From requirement to delivery.",
+      "p1": "We favor a pragmatic approach. Each project begins with listening and a rigorous feasibility study.",
+      "p2": "The coordination of our teams and partners then guarantees execution faithful to the specifications.",
+      "cta": "Submit your requirement"
+    },
+    "Why": {
+      "eyebrow": "Why SD International?",
+      "title": "The reliability of a partner, beyond the service.",
+      "description": "Every mission must inspire confidence in its preparation, organization, and follow-up.",
+      "cta": "Discuss your need",
+      "points": {
+        "1": {
+          "title": "Quality Commitment",
+          "desc": "Strict compliance with safety and quality standards in force."
+        },
+        "2": {
+          "title": "Technical Expertise",
+          "desc": "Qualified teams and trusted partners."
+        },
+        "3": {
+          "title": "Personalized Follow-up",
+          "desc": "A single point of contact to simplify your project management."
+        }
+      }
+    },
+    "Projects": {
+      "eyebrow": "Projects",
+      "title": "Concrete interventions, conducted with high standards.",
+      "cta": "View projects"
+    },
+    "Trade": {
+      "eyebrow": "Trade & Supplies",
+      "title": "Supply support for your technical needs.",
+      "description": "Materials, electrical equipment, industrial products, and industrial and marine lubricants for professional needs.",
+      "points": [
+        "Industrial and marine lubricants",
+        "Electrical equipment and materials",
+        "Import-export and logistics coordination"
+      ],
+      "cta": "Discover this expertise"
+    }
+  },
+  "Services": {
+    "btp-genie-civil": {
+      "short": "CONSTRUCTION & CIVIL ENG",
+      "title": "Construction, Development & Civil Engineering",
+      "description": "Construction, rehabilitation, development, structures, and civil engineering works.",
+      "points": [
+        "Construction and rehabilitation",
+        "Development and structures",
+        "Civil engineering works",
+        "Technical supervision of interventions"
+      ]
+    },
+    "reseaux-electriques": {
+      "short": "ENERGY & NETWORKS",
+      "title": "HV/MV/LV Electrical Networks & Solar",
+      "description": "Studies, works, electrification, connections, installations, and solar solutions.",
+      "points": [
+        "HV, MV, and LV networks",
+        "Electrification and connections",
+        "Electrical installations",
+        "Tailored solar solutions"
+      ]
+    },
+    "etudes-environnement": {
+      "short": "STUDIES & ENVIRONMENT",
+      "title": "Detail Design & Environment",
+      "description": "Technical preparation, detailed preliminary design studies, and consideration of environmental issues.",
+      "points": [
+        "Technical studies",
+        "Detailed preliminary design",
+        "Project preparation",
+        "Environmental considerations"
+      ]
+    },
+    "negoce-import-export": {
+      "short": "TRADE & IMPORT-EXPORT",
+      "title": "Import-export, Logistics & Supplies",
+      "description": "Supply of technical materials, electrical equipment, and industrial products.",
+      "points": [
+        "Import-export and logistics",
+        "Technical materials",
+        "Electrical equipment",
+        "Industrial and marine lubricants"
+      ]
+    },
+    "Page": {
+      "breadcrumb": "Services",
+      "what_we_do": "What we do",
+      "contact_cta": "Discuss your project"
+    }
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "description": "We are at your disposal to study your needs and propose adapted solutions.",
+    "form": {
+      "name": "Full Name",
+      "name_placeholder": "John Doe",
+      "email": "Email Address",
+      "email_placeholder": "john@example.com",
+      "phone": "Phone Number",
+      "phone_placeholder": "+229 XX XX XX XX",
+      "subject": "Subject",
+      "subject_placeholder": "Select a subject",
+      "subject_options": {
+        "btp": "Construction & Civil Engineering",
+        "energy": "Energy & Networks",
+        "logistics": "Trade & Logistics",
+        "other": "Other request"
+      },
+      "message": "Message",
+      "message_placeholder": "Detail your need here...",
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "success": "Message sent successfully. We will contact you soon.",
+      "error": "An error occurred while sending."
+    },
+    "info": {
+      "title": "Information",
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "rccm": "RCCM",
+      "ifu": "Tax ID (IFU)"
+    }
+  },
+  "HSE": {
+    "title": "HSE & Quality",
+    "description": "Safety, health, and environmental respect at the heart of our operations.",
+    "intro": "At SD International Group, operational excellence is inseparable from a rigorous Health, Safety, and Environment (HSE) policy.",
+    "sections": {
+      "safety": {
+        "title": "Site Safety",
+        "content": "We apply strict standards to prevent occupational risks, equip our employees, and secure our intervention areas."
+      },
+      "environment": {
+        "title": "Environmental Respect",
+        "content": "Each project is studied to minimize its ecological impact. We sort our waste, optimize material use, and favor sustainable solutions."
+      },
+      "quality": {
+        "title": "Quality Approach",
+        "content": "Our constant search for continuous improvement allows us to deliver works and services that comply with international standards."
+      }
+    }
+  },
+  "Legal": {
+    "mentions": {
+      "title": "Legal Notice",
+      "last_updated": "Last updated: October 1, 2026",
+      "content": "SD International Group\nRCCM : RB/COT/13 B 9956\nIFU : 3201300499718\nAddress : Ilot 1006, 01 BP 7099, Cotonou, Benin\nEmail : sdinter2009@yahoo.fr"
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "last_updated": "Last updated: October 1, 2026",
+      "content": "We respect your privacy. The information collected via our contact form is used exclusively to respond to your requests. No data is sold to third parties."
+    }
+  },
+  "NotFound": {
+    "title": "Page Not Found",
+    "description": "The page you are looking for does not exist or has been moved.",
+    "cta": "Back to Home"
+  },
+  "Error": {
+    "title": "An error occurred",
+    "description": "We apologize for the inconvenience.",
+    "cta": "Try Again"
   }
 }

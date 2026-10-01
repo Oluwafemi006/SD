@@ -2,23 +2,34 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { projects } from "@/data/site";
 import ImageLightbox from "@/components/ImageLightbox";
+import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "Réalisations",
-  description: "Découvrez les interventions et projets réalisés par SD International Group.",
-  alternates: { canonical: "/realisations" },
-  robots: projects.length ? undefined : { index: false, follow: false },
-};
-export default function ProjectsPage() {
+type Props = { params: Promise<{ locale: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Home.Projects" });
+  return {
+    title: t("eyebrow"),
+    description: t("title"),
+    alternates: { canonical: "/realisations" },
+    robots: projects.length ? undefined : { index: false, follow: false },
+  };
+}
+
+export default async function ProjectsPage({ params }: Props) {
   if (!projects.length) notFound();
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Home.Projects" });
+
   return (
     <main>
       <section className="bg-navy py-20 text-white md:py-28">
         <div className="site-container">
-          <span className="eyebrow !text-blue-300">Réalisations</span>
-          <h1 className="heading max-w-4xl font-extrabold">Des projets conduits avec exigence.</h1>
+          <span className="eyebrow !text-blue-300">{t("eyebrow")}</span>
+          <h1 className="heading max-w-4xl font-extrabold">{t("title")}</h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-            Découvrez une sélection d’interventions de SD International Group.
+            {t("cta")}
           </p>
         </div>
       </section>

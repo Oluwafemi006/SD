@@ -1,28 +1,30 @@
 import type { Metadata } from "next";
 import { Check } from "lucide-react";
 import PageHero from "@/components/PageHero";
+import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "HSE & Qualité",
-  description:
-    "Prévention, sécurité, environnement et qualité d'exécution au cœur des interventions de SD International Group.",
-  alternates: { canonical: "/hse-qualite" },
-};
-const commitments = [
-  "Prévention et identification des risques",
-  "Protection des travailleurs et des tiers",
-  "Contrôle qualité pendant l’exécution",
-  "Respect des exigences réglementaires applicables",
-  "Attention portée à l’environnement du chantier",
-  "Amélioration continue des pratiques",
-];
-export default function HsePage() {
+type Props = { params: Promise<{ locale: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "HSE" });
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: { canonical: "/hse-qualite" },
+  };
+}
+
+export default async function HsePage({ params }: Props) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "HSE" });
+
   return (
     <main>
       <PageHero
-        eyebrow="HSE & Qualité"
+        eyebrow={t("title")}
         title="La performance passe par la maîtrise des risques."
-        description="La prévention, la sécurité des équipes, la conformité et la qualité d’exécution guident nos interventions."
+        description={t("intro")}
         image="/images/services/hse-electricite-terrain.jpeg"
       />
       <section className="section">
@@ -38,12 +40,18 @@ export default function HsePage() {
             </p>
           </div>
           <div className="grid gap-4">
-            {commitments.map((x) => (
-              <div className="flex gap-4 rounded-lg border p-5" key={x}>
-                <Check className="shrink-0 text-gold" />
-                <strong>{x}</strong>
-              </div>
-            ))}
+            <div className="flex gap-4 rounded-lg border p-5">
+              <Check className="shrink-0 text-gold" />
+              <strong>{t("sections.safety.title")}: {t("sections.safety.content")}</strong>
+            </div>
+            <div className="flex gap-4 rounded-lg border p-5">
+              <Check className="shrink-0 text-gold" />
+              <strong>{t("sections.environment.title")}: {t("sections.environment.content")}</strong>
+            </div>
+            <div className="flex gap-4 rounded-lg border p-5">
+              <Check className="shrink-0 text-gold" />
+              <strong>{t("sections.quality.title")}: {t("sections.quality.content")}</strong>
+            </div>
           </div>
         </div>
       </section>

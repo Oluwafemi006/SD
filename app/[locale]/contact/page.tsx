@@ -3,31 +3,41 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import ContactForm from "@/components/ContactForm";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import { site } from "@/data/site";
+import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "Contact",
-  description:
-    "Contactez SD International Group pour un projet, une consultation ou un besoin d'approvisionnement.",
-  alternates: { canonical: "/contact" },
-};
-export default function ContactPage() {
+type Props = { params: Promise<{ locale: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Contact" });
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: { canonical: "/contact" },
+  };
+}
+
+export default async function ContactPage({ params }: Props) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Contact" });
+
   return (
     <main>
       <section className="bg-navy py-20 text-white">
         <div className="site-container">
-          <span className="eyebrow !text-blue-300">Contact</span>
+          <span className="eyebrow !text-blue-300">{t("title")}</span>
           <h1 className="heading max-w-3xl font-extrabold">
-            Un projet, une consultation ou un besoin d’approvisionnement ?
+            {t("description")}
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-            Présentez-nous votre besoin. Nous reviendrons vers vous avec une première orientation.
+            {t("info.title")}
           </p>
         </div>
       </section>
       <section className="section">
         <div className="site-container grid gap-12 lg:grid-cols-[.7fr_1.3fr]">
           <aside>
-            <h2 className="text-2xl font-extrabold text-navy">Coordonnées</h2>
+            <h2 className="text-2xl font-extrabold text-navy">{t("info.title")}</h2>
             <div className="mt-8 grid">
               <a
                 aria-label={`Appeler SD International Group au ${site.phone}`}
@@ -60,7 +70,7 @@ export default function ContactPage() {
                 className="flex min-h-16 items-center gap-4 border-b py-4 font-semibold"
               >
                 <WhatsAppIcon className="shrink-0 text-[#25d366]" />
-                <span>Échanger sur WhatsApp</span>
+                <span>WhatsApp</span>
               </a>
             </div>
           </aside>

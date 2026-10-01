@@ -7,5 +7,10 @@ export default defineConfig([
   { ignores: [".next/**", ".next-webpack/**", "node_modules/**", "build/**", "next-env.d.ts"] },
   ...nextVitals,
   ...nextTs,
+  {
+    rules: {
+      "@typescript-eslint/no-explicit-any": "off",
+    },
+  },
   eslintConfigPrettier,
 ]);

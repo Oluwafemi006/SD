@@ -1,9 +1,23 @@
 {
   "Header": {
     "about": "À propos",
-    "services": "Nos services",
+    "services": "Services",
     "projects": "Réalisations",
-    "contact": "Nous contacter"
+    "hse": "HSE & Qualité",
+    "contact": "Contactez-nous"
+  },
+  "Footer": {
+    "about": "À propos de nous",
+    "about_text": "Entreprise multisectorielle basée au Bénin, spécialisée dans le BTP, le génie civil, l'énergie solaire, les réseaux électriques, la logistique et l'import-export.",
+    "contact": "Contact",
+    "links": "Liens utiles",
+    "home": "Accueil",
+    "services": "Nos services",
+    "projects": "Nos réalisations",
+    "hse": "HSE & Qualité",
+    "mentions": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "rights": "Tous droits réservés."
   },
   "Hero": {
     "eyebrow": "Bénin · Solutions multisectorielles",
@@ -12,5 +26,189 @@
     "description": "Conseil, réalisation, fourniture et coordination : nous mobilisons les compétences adaptées à chaque mission.",
     "cta_primary": "Présenter votre besoin",
     "cta_secondary": "Explorer nos activités"
+  },
+  "Home": {
+    "About": {
+      "eyebrow": "À propos de SD International",
+      "title": "Une expertise polyvalente pour vos projets complexes.",
+      "p1": "Intervenant principalement au Bénin et dans la sous-région, SD International Group regroupe des compétences pointues pour répondre aux défis techniques des entreprises et des institutions.",
+      "p2": "Notre force réside dans notre capacité à coordonner différents corps de métiers, de l'étude à la réalisation, en passant par l'approvisionnement en matériels spécifiques.",
+      "cta": "Découvrir nos engagements"
+    },
+    "Expertise": {
+      "eyebrow": "Champs d’intervention",
+      "title": "Des compétences qui se répondent.",
+      "description": "Explorez nos activités et composez une réponse adaptée à la réalité de votre besoin.",
+      "cta": "Explorer cette expertise"
+    },
+    "Method": {
+      "eyebrow": "Notre méthode",
+      "title": "De l'expression du besoin à la livraison.",
+      "p1": "Nous privilégions une approche pragmatique. Chaque projet débute par une phase d'écoute et d'étude de faisabilité rigoureuse.",
+      "p2": "La coordination de nos équipes et de nos partenaires garantit ensuite une exécution fidèle au cahier des charges.",
+      "cta": "Présenter votre besoin"
+    },
+    "Why": {
+      "eyebrow": "Pourquoi SD International ?",
+      "title": "Le sérieux d'un partenaire, au-delà de la prestation.",
+      "description": "Chaque mission doit inspirer confiance dans sa préparation, son organisation et son suivi.",
+      "cta": "Échanger sur votre besoin",
+      "points": {
+        "1": {
+          "title": "Engagement qualité",
+          "desc": "Respect strict des normes de sécurité et de qualité en vigueur."
+        },
+        "2": {
+          "title": "Expertise technique",
+          "desc": "Des équipes qualifiées et des partenaires de confiance."
+        },
+        "3": {
+          "title": "Suivi personnalisé",
+          "desc": "Un interlocuteur unique pour simplifier la gestion de votre projet."
+        }
+      }
+    },
+    "Projects": {
+      "eyebrow": "Réalisations",
+      "title": "Des interventions concrètes, conduites avec exigence.",
+      "cta": "Voir les réalisations"
+    },
+    "Trade": {
+      "eyebrow": "Négoce & fournitures",
+      "title": "Un appui d’approvisionnement pour vos besoins techniques.",
+      "description": "Matériels, équipements électriques, produits industriels et lubrifiants industriels et marins pour les besoins professionnels.",
+      "points": [
+        "Lubrifiants industriels et marins",
+        "Équipements et matériels électriques",
+        "Import-export et coordination logistique"
+      ],
+      "cta": "Découvrir cette expertise"
+    }
+  },
+  "Services": {
+    "btp-genie-civil": {
+      "short": "BTP & GÉNIE CIVIL",
+      "title": "BTP, aménagement & génie civil",
+      "description": "Construction, réhabilitation, aménagement, ouvrages et travaux de génie civil.",
+      "points": [
+        "Construction et réhabilitation",
+        "Aménagement et ouvrages",
+        "Travaux de génie civil",
+        "Suivi technique des interventions"
+      ]
+    },
+    "reseaux-electriques": {
+      "short": "ÉNERGIE & RÉSEAUX",
+      "title": "Réseaux électriques HT/MT/BT & solaire",
+      "description": "Études, travaux, électrification, raccordements, installations et solutions solaires.",
+      "points": [
+        "Réseaux HT, MT et BT",
+        "Électrification et raccordements",
+        "Installations électriques",
+        "Solutions solaires adaptées"
+      ]
+    },
+    "etudes-environnement": {
+      "short": "ÉTUDES & ENVIRONNEMENT",
+      "title": "Études APD & environnement",
+      "description": "Préparation technique, études d'avant-projet détaillé et prise en compte des enjeux environnementaux.",
+      "points": [
+        "Études techniques",
+        "Avant-projet détaillé",
+        "Préparation des projets",
+        "Considérations environnementales"
+      ]
+    },
+    "negoce-import-export": {
+      "short": "NÉGOCE & IMPORT-EXPORT",
+      "title": "Import-export, logistique & fournitures",
+      "description": "Approvisionnement en matériels techniques, équipements électriques et produits industriels.",
+      "points": [
+        "Import-export et logistique",
+        "Matériels techniques",
+        "Équipements électriques",
+        "Lubrifiants industriels et marins"
+      ]
+    },
+    "Page": {
+      "breadcrumb": "Services",
+      "what_we_do": "Ce que nous faisons",
+      "contact_cta": "Discuter de votre projet"
+    }
+  },
+  "Contact": {
+    "title": "Contactez-nous",
+    "description": "Nous sommes à votre disposition pour étudier vos besoins et vous proposer des solutions adaptées.",
+    "form": {
+      "name": "Nom complet",
+      "name_placeholder": "Jean Dupont",
+      "email": "Adresse email",
+      "email_placeholder": "jean@exemple.com",
+      "phone": "Téléphone",
+      "phone_placeholder": "+229 XX XX XX XX",
+      "subject": "Sujet",
+      "subject_placeholder": "Sélectionnez un sujet",
+      "subject_options": {
+        "btp": "BTP & Génie Civil",
+        "energy": "Énergie & Réseaux",
+        "logistics": "Négoce & Logistique",
+        "other": "Autre demande"
+      },
+      "message": "Message",
+      "message_placeholder": "Détaillez votre besoin ici...",
+      "submit": "Envoyer le message",
+      "submitting": "Envoi en cours...",
+      "success": "Message envoyé avec succès. Nous vous contacterons bientôt.",
+      "error": "Une erreur est survenue lors de l'envoi."
+    },
+    "info": {
+      "title": "Informations",
+      "address": "Adresse",
+      "phone": "Téléphone",
+      "email": "Email",
+      "rccm": "RCCM",
+      "ifu": "IFU"
+    }
+  },
+  "HSE": {
+    "title": "HSE & Qualité",
+    "description": "La sécurité, la santé et le respect de l'environnement au cœur de nos opérations.",
+    "intro": "Chez SD International Group, l'excellence opérationnelle passe indissociablement par une politique Hygiène, Sécurité et Environnement (HSE) rigoureuse.",
+    "sections": {
+      "safety": {
+        "title": "Sécurité sur les chantiers",
+        "content": "Nous appliquons des standards stricts pour prévenir les risques professionnels, équiper nos collaborateurs et sécuriser nos zones d'intervention."
+      },
+      "environment": {
+        "title": "Respect de l'environnement",
+        "content": "Chaque projet est étudié pour minimiser son impact écologique. Nous trions nos déchets, optimisons l'usage des matériaux et privilégions les solutions durables."
+      },
+      "quality": {
+        "title": "Démarche Qualité",
+        "content": "Notre recherche constante d'amélioration continue nous permet de livrer des ouvrages et des services conformes aux normes internationales."
+      }
+    }
+  },
+  "Legal": {
+    "mentions": {
+      "title": "Mentions Légales",
+      "last_updated": "Dernière mise à jour : 01 Octobre 2026",
+      "content": "SD International Group\nRCCM : RB/COT/13 B 9956\nIFU : 3201300499718\nAdresse : Ilot 1006, 01 BP 7099, Cotonou, Bénin\nEmail : sdinter2009@yahoo.fr"
+    },
+    "privacy": {
+      "title": "Politique de confidentialité",
+      "last_updated": "Dernière mise à jour : 01 Octobre 2026",
+      "content": "Nous respectons votre vie privée. Les informations collectées via notre formulaire de contact sont utilisées exclusivement pour répondre à vos requêtes. Aucune donnée n'est revendue à des tiers."
+    }
+  },
+  "NotFound": {
+    "title": "Page introuvable",
+    "description": "La page que vous recherchez n'existe pas ou a été déplacée.",
+    "cta": "Retour à l'accueil"
+  },
+  "Error": {
+    "title": "Une erreur est survenue",
+    "description": "Nous nous excusons pour ce désagrément.",
+    "cta": "Réessayer"
   }
 }

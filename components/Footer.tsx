@@ -1,10 +1,14 @@
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { projects, services, site } from "@/data/site";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+  const t = useTranslations("Footer");
+  const t_services = useTranslations("Services");
+
   return (
     <footer className="bg-[#071827] py-16 text-slate-300">
       <div className="site-container">
@@ -25,31 +29,30 @@ export default function Footer() {
               </span>
             </Link>
             <p className="mt-5 text-sm leading-7">
-              Des compétences complémentaires pour accompagner les projets, les opérations et les
-              besoins d’approvisionnement.
+              {t("about_text")}
             </p>
           </div>
           <div>
-            <h2 className="font-bold text-white">Navigation</h2>
+            <h2 className="font-bold text-white">{t("links")}</h2>
             <div className="mt-5 flex flex-col gap-3 text-sm">
-              <Link href="/#a-propos">À propos</Link>
-              <Link href="/#services">Services</Link>
-              {projects.length > 0 && <Link href="/realisations">Réalisations</Link>}
-              <Link href="/hse-qualite">HSE & Qualité</Link>
+              <Link href="/#a-propos">{t("about")}</Link>
+              <Link href="/#services">{t("services")}</Link>
+              {projects.length > 0 && <Link href="/realisations">{t("projects")}</Link>}
+              <Link href="/hse-qualite">{t("hse")}</Link>
             </div>
           </div>
           <div>
-            <h2 className="font-bold text-white">Expertises</h2>
+            <h2 className="font-bold text-white">{t("services")}</h2>
             <div className="mt-5 flex flex-col gap-3 text-sm">
               {services.map((s) => (
-                <Link key={s.slug} href={`/services/${s.slug}`}>
-                  {s.title}
+                <Link key={s.slug} href={`/services/${s.slug}` as any}>
+                  {t_services(`${s.slug}.title` as any)}
                 </Link>
               ))}
             </div>
           </div>
           <div>
-            <h2 className="font-bold text-white">Contact</h2>
+            <h2 className="font-bold text-white">{t("contact")}</h2>
             <div className="mt-5 flex flex-col gap-4 text-sm">
               <a
                 aria-label={`Appeler le ${site.phone}`}
@@ -75,7 +78,7 @@ export default function Footer() {
                 rel="noreferrer"
               >
                 <WhatsAppIcon className="shrink-0 text-[#25d366]" size={17} />
-                <span>Échanger sur WhatsApp</span>
+                <span>WhatsApp</span>
               </a>
               <span aria-label={`Adresse : ${site.address}`} className="flex gap-2 leading-6">
                 <MapPin className="mt-0.5 shrink-0" size={17} />
@@ -85,13 +88,13 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-14 flex flex-col justify-between gap-4 border-t border-white/10 pt-6 text-xs sm:flex-row">
-          <span>© {new Date().getFullYear()} SD International Group. Tous droits réservés.</span>
+          <span>© {new Date().getFullYear()} SD International Group. {t("rights")}</span>
           <div className="flex flex-wrap gap-x-5 gap-y-2">
             <Link className="hover:text-white" href="/mentions-legales">
-              Mentions légales
+              {t("mentions")}
             </Link>
             <Link className="hover:text-white" href="/politique-confidentialite">
-              Politique de confidentialité
+              {t("privacy")}
             </Link>
           </div>
         </div>
