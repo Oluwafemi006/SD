@@ -1,0 +1,50 @@
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { projects } from "@/data/site";
+import ImageLightbox from "@/components/ImageLightbox";
+
+export const metadata: Metadata = {
+  title: "Réalisations",
+  description: "Découvrez les interventions et projets réalisés par SD International Group.",
+  alternates: { canonical: "/realisations" },
+  robots: projects.length ? undefined : { index: false, follow: false },
+};
+export default function ProjectsPage() {
+  if (!projects.length) notFound();
+  return (
+    <main>
+      <section className="bg-navy py-20 text-white md:py-28">
+        <div className="site-container">
+          <span className="eyebrow !text-blue-300">Réalisations</span>
+          <h1 className="heading max-w-4xl font-extrabold">Des projets conduits avec exigence.</h1>
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
+            Découvrez une sélection d’interventions de SD International Group.
+          </p>
+        </div>
+      </section>
+      <section className="section">
+        <div className="site-container grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {projects.map((p) => (
+            <article
+              key={p.title}
+              className="overflow-hidden rounded-lg border border-slate-200 bg-white"
+            >
+              <ImageLightbox
+                src={p.image}
+                alt={p.title}
+                className="h-72"
+                sizes="(min-width:1024px) 33vw, 50vw"
+              />
+              <div className="p-6">
+                <p className="text-xs font-extrabold uppercase text-brand">{p.category}</p>
+                <h2 className="mt-3 text-xl font-extrabold text-navy">{p.title}</h2>
+                <p className="mt-2 text-sm font-semibold text-muted">{p.location}</p>
+                <p className="mt-4 leading-7 text-muted">{p.description}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    </main>
+  );
+}

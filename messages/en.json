@@ -1,0 +1,16 @@
+{
+  "Header": {
+    "about": "About",
+    "services": "Our Services",
+    "projects": "Projects",
+    "contact": "Contact Us"
+  },
+  "Hero": {
+    "eyebrow": "Benin · Multisectoral Solutions",
+    "title1": "Transforming your needs into",
+    "title2": "concrete solutions.",
+    "description": "Consulting, execution, supply, and coordination: we mobilize the right skills for every mission.",
+    "cta_primary": "Submit your request",
+    "cta_secondary": "Explore our activities"
+  }
+}

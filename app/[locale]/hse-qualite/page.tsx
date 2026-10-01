@@ -1,0 +1,52 @@
+import type { Metadata } from "next";
+import { Check } from "lucide-react";
+import PageHero from "@/components/PageHero";
+
+export const metadata: Metadata = {
+  title: "HSE & Qualité",
+  description:
+    "Prévention, sécurité, environnement et qualité d'exécution au cœur des interventions de SD International Group.",
+  alternates: { canonical: "/hse-qualite" },
+};
+const commitments = [
+  "Prévention et identification des risques",
+  "Protection des travailleurs et des tiers",
+  "Contrôle qualité pendant l’exécution",
+  "Respect des exigences réglementaires applicables",
+  "Attention portée à l’environnement du chantier",
+  "Amélioration continue des pratiques",
+];
+export default function HsePage() {
+  return (
+    <main>
+      <PageHero
+        eyebrow="HSE & Qualité"
+        title="La performance passe par la maîtrise des risques."
+        description="La prévention, la sécurité des équipes, la conformité et la qualité d’exécution guident nos interventions."
+        image="/images/services/hse-electricite-terrain.jpeg"
+      />
+      <section className="section">
+        <div className="site-container grid gap-12 lg:grid-cols-2">
+          <div>
+            <span className="eyebrow">Nos engagements</span>
+            <h2 className="heading font-extrabold text-navy">
+              Une vigilance présente à chaque étape.
+            </h2>
+            <p className="lead mt-6">
+              L’approche HSE est intégrée à la préparation, à l’organisation et au suivi des
+              travaux, en cohérence avec les exigences applicables à chaque mission.
+            </p>
+          </div>
+          <div className="grid gap-4">
+            {commitments.map((x) => (
+              <div className="flex gap-4 rounded-lg border p-5" key={x}>
+                <Check className="shrink-0 text-gold" />
+                <strong>{x}</strong>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}

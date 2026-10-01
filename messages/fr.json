@@ -1,0 +1,16 @@
+{
+  "Header": {
+    "about": "À propos",
+    "services": "Nos services",
+    "projects": "Réalisations",
+    "contact": "Nous contacter"
+  },
+  "Hero": {
+    "eyebrow": "Bénin · Solutions multisectorielles",
+    "title1": "Transformer vos besoins en",
+    "title2": "solutions concrètes.",
+    "description": "Conseil, réalisation, fourniture et coordination : nous mobilisons les compétences adaptées à chaque mission.",
+    "cta_primary": "Présenter votre besoin",
+    "cta_secondary": "Explorer nos activités"
+  }
+}
