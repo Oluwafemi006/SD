@@ -13,15 +13,15 @@ export const site = {
     "Lubrifiants industriels",
     "SD International Group",
   ],
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.sdinternational-group.com",
-  phone: "+229 01 96 97 18 32",
-  phoneHref: "+2290196971832",
-  email: "sdinter2009@yahoo.fr",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.sd-internationalgroup.com",
+  phone: "+229 01 98 16 16 17",
+  phoneHref: "+2290198161617",
+  email: "contact@sd-internationalgroup.com",
   location: "Bénin",
   address: "Ilot 1006, 01 BP 7099, Cotonou, Bénin",
   rccm: "RB/COT/13 B 9956",
   ifu: "3201300499718",
-  whatsapp: "https://wa.me/2290196971832",
+  whatsapp: "https://wa.me/2290198161617",
 };
 
 export const services = [
